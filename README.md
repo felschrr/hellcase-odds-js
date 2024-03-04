@@ -6,8 +6,6 @@ Javascript porting of this [hellcase-odds](https://github.com/Pajul7/hellcase-od
 Simply enter the URL of the case and the script will calculate its profitability.  
 All costs are calculated in USD ($).
 
-### ⚠️ ONLY WORKS FOR FIREFOX BROWSER ⚠️
-
 ## How to use
 ### Must have [GeckoDriver](https://github.com/mozilla/geckodriver/releases) installed first on your computer
 1. Clone the repo using `git clone https://github.com/felschrr/hellcase-odds-js`
