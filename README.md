@@ -8,9 +8,10 @@ Javascript porting of this [hellcase-odds](https://github.com/Pajul7/hellcase-od
 
 ## Features
 
-* Calcultate the profitability of a certain case (`script.js`)
-* Generate all cases URL in a .json file (`generateCasesURL.js`)
-* Calculate the profitability of all cases and generate a .csv file structured such as Case Name, Expected Return, Net Profit, Average Gain (%) (`generateAllCases.js`)
+* Calcultate the profitability of a certain case -> `script.js`
+* Generate all cases URL in a .json file -> `generateCasesURL.js`
+* Calculate the profitability of all cases and generate a .csv file structured such as  
+Case Name, Expected Return, Net Profit, Average Gain (%) -> `generateAllCases.js`
 
 ## How to use
 
