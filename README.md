@@ -1,5 +1,5 @@
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white)
-# hellcase-odds-js 
+# Hellcase Odds JS
 Javascript porting of this [hellcase-odds](https://github.com/Pajul7/hellcase-odds) repo made by [Pajul7](https://github.com/Pajul7)  
 
 ### Node.js script to calculate the profitability of a Hellcase case  
@@ -20,5 +20,5 @@ All costs are calculated in USD ($).
 7. When done, press `Enter` if you want to calculate another case profitability, if not type `exit` to exit the script
 
 ## Known bugs :bug:
-* [ ] The 4th most expensive skin variant is not taken into account ➡️ To be fixed 
-* [ ] Chrome is not working properly ➡️ To be fixed 
+* [ ] The 4th most expensive skin variant is not taken into account
+* [ ] Chrome is not working properly
