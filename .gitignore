@@ -1,3 +1,7 @@
 # Ignore all node modules
 **/node_modules
 node_modules
+
+# Ignore data files
+profitabilityResults.csv
+caseLinks.json

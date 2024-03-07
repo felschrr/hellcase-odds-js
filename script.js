@@ -219,6 +219,14 @@ async function handleModalIfExists() {
             console.log(
                 `Calculating expected value of skin ${i + 1}/${caseLength}...`
             );
+            let totalConditionalProbability = 0;
+            for (let j = 0; j < skinOddsValueTuple[i][0].length; j++) {
+                totalConditionalProbability += skinOddsValueTuple[i][1][j];
+            }
+            // Check if the sum of conditional probabilities is close to 1 (or 100%).
+            if (Math.abs(totalConditionalProbability - 1) > 0.01) {
+                console.warn(`Conditional probabilities sum for this ${caseName} case is not close to 1.`);
+            }
             let itemExpectancy = 0;
             for (let j = 0; j < skinOddsValueTuple[i][0].length; j++) {
                 itemExpectancy +=
