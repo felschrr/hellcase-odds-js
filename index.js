@@ -54,7 +54,7 @@ async function handleModalIfExists() {
         await driver.executeScript("arguments[0].remove();", modal);
         console.log("Pop-up modal found and removed.");
     } catch (error) {
-        console.log("Pop-up modal not found or error removing it:");
+        console.log("Pop-up modal not found or error removing it");
     }
 }
 
