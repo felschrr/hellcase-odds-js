@@ -20,4 +20,5 @@ All costs are calculated in USD ($).
 7. When done, press `Enter` if you want to calculate another case profitability, if not type `exit` to exit the script
 
 ## Known bugs :bug:
-* The 4th most expensive skin variant is not taken into account ➡️ To be fixed 
+* [ ] The 4th most expensive skin variant is not taken into account ➡️ To be fixed 
+* [ ] Chrome is not working properly ➡️ To be fixed 
