@@ -13,7 +13,7 @@ Javascript porting of this [hellcase-odds](https://github.com/Pajul7/hellcase-od
 * Calculate the profitability of all cases and generate a .csv file structured such as  
 Case Name, Expected Return, Net Profit, Average Gain (%) -> `generateAllCases.js`
 
-## How to use
+## Prerequisites  
 
 ### ⚠️ Firefox users: Must have [GeckoDriver](https://github.com/mozilla/geckodriver/releases) installed first on your computer
 
@@ -21,6 +21,7 @@ Case Name, Expected Return, Net Profit, Average Gain (%) -> `generateAllCases.js
 
 ### `Others browsers are not supported yet`
 
+## How to use  
 1. Clone the repo using `git clone https://github.com/felschrr/hellcase-odds-js`
 2. Go into the repo folder using `cd hellcase-odds-js`
 3. Download dependencies using `npm install`
