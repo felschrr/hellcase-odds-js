@@ -34,14 +34,17 @@ async function handleModalIfExists() {
 function ensureResultsFile() {
     const resultsPath = path.join(__dirname, "profitabilityResults.csv");
     try {
-        if (!fs.existsSync(resultsPath)) {
-            // Write the headers if the file doesn't exist
-            fs.writeFileSync(
-                resultsPath,
-                "Case Name,Expected Return,Net Profit,Average Gain (%)\n",
-                { flag: "wx" }
-            );
+        // Check if the file exists, if so, delete it
+        if (fs.existsSync(resultsPath)) {
+            fs.unlinkSync(resultsPath);
+            console.log("Existing file deleted.");
         }
+        // Write the headers
+        fs.writeFileSync(
+            resultsPath,
+            "Case Name,Expected Return,Net Profit,Average Gain (%)\n",
+            { flag: "wx" }
+        );
     } catch (err) {
         console.error(
             "An error occurred while initializing the results file:",
@@ -84,7 +87,6 @@ function ensureResultsFile() {
                 })
             );
             items = items.filter((item) => item !== null);
-            let caseLength = items.length;
 
             await driver.wait(
                 until.elementLocated(
