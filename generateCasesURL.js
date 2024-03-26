@@ -1,11 +1,13 @@
-const { Builder, By } = require('selenium-webdriver');
+// Import required modules
+const { Builder, By } = require("selenium-webdriver");
+const firefox = require("selenium-webdriver/firefox");
 const fs = require('fs');
 
 async function scrapeHellcase() {
     let options = new firefox.Options();
     options.addArguments("--headless");
     let driver = await new Builder()
-        .forBrowser(browser)
+        .forBrowser("firefox")
         .setFirefoxOptions(options)
         .build();
     try {
